@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bernardo Ayala's Portfolio</title>
+    <meta name="description" content="Samples of previous works by Bernardo Ayala.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header>
+      <h1 class="brand">Bernardo Ayala</h1>
+      <ul class="navbar">
+        <li><a class="navbar-link" id="portfolio-link" href="#portfolio">Portfolio</a></li>
+        <li><a class="navbar-link" id="contact-link" href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section class="hero">
+        <figure class="profile-pictureContainer">
+          <img class="profile-picture" src="img/profile.png" alt="Profile picture">
+        </figure>
+        <h1 class="name">Bernardo Ayala</h1>
+        <hr class="white-hr">
+        <p class="skills">Front-end developer | Blogger</p>
+        <p>Click <a class="resume-link" href="resume.pdf">here</a> to see my resume</p>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <hr class="white-hr">
+      <article class="project">
+        <div class="project-details left">
+          <h3 class="project-title">Personal blog</h3>
+          <p class="project-description">This is my personal blog, where I write about technology, comedy and some ideas and thoughts. I made it using Hugo, with the BeautifulHugo theme. The posts are organized by categories and tags and they also have the date when they were published and the author. The content is in Spanish but I can also create content in English.</p>
+        </div>
+        <figure class="project-imageContainer right">
+          <img class="project-image" src="img/projects/personal-blog.png" alt="">
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details right">
+          <h3 class="project-title">Book Sotre Homepage</h3>
+          <p class="project-description">A simple responsive book store homepage. It has a search bar and a sidebar. The books can be organized by categories, authors, subjects or year.</p>
+        </div>
+        <figure class="project-imageContainer left">
+          <img class="project-image" src="img/projects/book-store.png" alt="">
+        </figure>
+      </article>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <hr class="white-hr">
+        <form class="contact-form" method="post">
+          <input class="contact-input" type="text" name="name" placeholder="Full name">
+          <input class="contact-input" type="text" name="mail" placeholder="E-mail">
+          <input class="contact-input" type="text" name="subject" placeholder="Subject">
+          <textarea class="message" name="message" placeholder="Message"></textarea>
+          <button class="submit-button" type="submit" name="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <ul class="social-networks">
+        <li><a href="https://twitter.com/Bernardo_Ayala"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/bernardoayalam/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/bernardo-ayala/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/BernardoAyala"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </footer>
+    <script src="js/menu.js">
+
+    </script>
+  </body>
+</html>
