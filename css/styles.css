@@ -75,6 +75,33 @@ img {
 /*
  * Definimos los botones y sus variantes
  */
+.btn {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  height: 44px;
+  margin: 0;
+  padding: .6em 2em .8em;
+  background: #bfbfbf;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+  outline: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  will-change: transform;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
 .burger-button {
   width: 40px;
   height: 40px;
@@ -335,9 +362,8 @@ section {
 }
 
 .contact-submit {
-  width: 150px;
+  width: 200px;
   height: 50px;
-  cursor: pointer;
 }
 
 footer {
