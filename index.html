@@ -9,37 +9,37 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 
   </head>
   <body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
-    <header>
-      <h1 class="brand">Bernardo Ayala</h1>
-      <ul class="navbar">
-        <li><a class="navbar-link" id="portfolio-link" href="#portfolio">Portfolio</a></li>
-        <li><a class="navbar-link" id="contact-link" href="#contact">Contact</a></li>
+    <i class="fas fa-bars burger-button" id="burger-menu"></i>
+    <nav class="navbar-top">
+      <h3>Bernardo Ayala</h3>
+      <ul>
+        <li><a id="portfolio-link" href="#portfolio">Portfolio</a></li>
+        <li><a id="contact-link" href="#contact">Contact</a></li>
       </ul>
-    </header>
+    </nav class="navbar-top">
     <section class="hero">
         <figure class="profile-pictureContainer">
           <img class="profile-picture" src="img/profile.png" alt="Profile picture">
         </figure>
-        <h1 class="name">Bernardo Ayala</h1>
-        <hr class="white-hr">
-        <p class="skills">Front-end developer | Blogger</p>
+        <h1 class="hero-name">Bernardo Ayala</h1>
+        <hr>
+        <p class="hero-skills">Front-end developer | Blogger</p>
         <p>Click <a class="resume-link" href="resume.pdf">here</a> to see my resume</p>
     </section>
     <section id="portfolio" class="portfolio">
       <h2 class="section-title">Portfolio</h2>
-      <hr class="white-hr">
+      <hr>
       <article class="project">
         <figure class="project-imageContainer">
           <a href="http://bernardoayala.com/">
             <img class="project-image" src="img/projects/personal-blog.png" alt="">
           </a>
           <figcaption class="project-details">
-            <h3 class="project-title">Personal blog</h3>
+            <h6 class="project-title">Personal blog</h6>
             <p class="project-description">My personal blog made with Hugo. The content is in Spanish but I can also create content in English.</p>
           </figcaption>
         </figure>
@@ -48,7 +48,7 @@
             <img class="project-image" src="img/projects/book-store.png" alt="">
           </a>
           <figcaption class="project-details">
-            <h3 class="project-title">Book Store</h3>
+            <h6 class="project-title">Book Store</h6>
             <p class="project-description">A simple and responsive book store homepage made with HTML, CSS and JavaScript.</p>
           </figcaption>
         </figure>
@@ -57,13 +57,13 @@
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <hr class="white-hr">
+        <hr>
         <form class="contact-form" method="post">
           <input class="contact-input" type="text" name="name" placeholder="Full name">
           <input class="contact-input" type="text" name="mail" placeholder="E-mail">
           <input class="contact-input" type="text" name="subject" placeholder="Subject">
-          <textarea class="message" name="message" placeholder="Message"></textarea>
-          <button class="submit-button" type="submit" name="submit">SEND MESSAGE</button>
+          <textarea class="contact-message" name="message" placeholder="Message"></textarea>
+          <button class="contact-submit" type="submit" name="submit">SEND MESSAGE</button>
         </form>
       </div>
     </section>

@@ -1,0 +1,170 @@
+
+
+
+
+
+/*------------------------------------*\
+    $SITIO
+\*------------------------------------*/
+
+
+@-webkit-viewport {
+	width : device-width;
+}
+
+@-moz-viewport {
+	width : device-width;
+}
+
+@-ms-viewport {
+	width : device-width;
+}
+
+@-o-viewport {
+	width : device-width;
+}
+
+@viewport {
+	width : device-width;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+section {
+  padding: 5em 0;
+  text-align: center;
+}
+
+
+.navbar-top {
+  background-color: $color-brand;
+  font-family: $baseheadingfont;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 6rem;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  color: $white;
+  ul {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+  a {
+    display: inherit;
+    align-items: inherit;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+}
+
+.hero {
+  display: grid;
+  justify-items: center;
+  color: $white;
+  background-color: $color-secondary;
+  &-skills {
+    margin: 5px;
+    font-size: 30px;
+  }
+  a {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.portfolio {
+  color: $white;
+  background: $color-brand;
+  .project {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,400px));
+    grid-column-gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    &-imageContainer {
+      position: relative;
+    }
+    &-image {
+      border-radius: 10px;
+    }
+    &-details {
+      position: absolute;
+      top: 60%;
+      bottom: 0px;
+      right: 0;
+      left: 0;
+      padding: 10px;
+      font-family: &basefont;
+      text-align: center;
+      color: black;
+      background: rgba(255, 255, 255, .8);
+      border-radius: 0 0 9px 9px;
+    }
+  }
+}
+
+.contact {
+  background-color: $color-secondary;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+  &-input {
+    margin: 10px 0 0 0;
+    padding: 10px;
+  }
+  &-message {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    height: 200px;
+    resize: none;
+  }
+  &-submit {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+
+footer {
+  background-color: $color-brand;
+  height: 6rem;
+}
+
+.social-networks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-right: 20px;
+    height: inherit;
+  }
+}

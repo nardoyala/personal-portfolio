@@ -1,0 +1,372 @@
+/**
+* Scss Libraries, mixins, functions and any Scss focused logic
+**/
+/*------------------------------------*\
+            $VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+/**
+ * Brand colors
+ */
+/**
+    * Grey Scale
+    * This is mainly to hold back designers from adding 200 different greys ;)
+    */
+/*------------------------------------*\
+                $FOTNS
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+* Base
+**/
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  border-width: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+/**
+* HTML elements
+**/
+/*------------------------------------*\
+    $BOTONES
+\*------------------------------------*/
+/*
+ * Definimos los botones y sus variantes
+ */
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
+/*------------------------------------*\
+            $TYPOGRAPHY
+\*------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+}
+
+h1, .h1 {
+  margin-bottom: 0;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h2, .h2 {
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+h3, .h3 {
+  margin-bottom: 0;
+  font-size: 2.1rem;
+  line-height: 1.5;
+}
+
+h4, .h4 {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h5, .h5 {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h6, .h6 {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+hr {
+  clear: both;
+  display: block;
+  border-top: 3px solid white;
+  width: 15rem;
+}
+
+/**
+* Layout and general styles
+**/
+/*------------------------------------*\
+    $SITIO
+\*------------------------------------*/
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  padding: 5em 0;
+  text-align: center;
+}
+
+.navbar-top {
+  background-color: #263D4A;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template: 1fr / 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+  color: white;
+}
+
+.navbar-top ul {
+  height: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+.navbar-top ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-top a {
+  display: inherit;
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  color: white;
+  background-color: #18BC9C;
+}
+
+.hero-skills {
+  margin: 5px;
+  font-size: 30px;
+}
+
+.hero a {
+  color: white;
+  font-weight: bold;
+}
+
+.portfolio {
+  color: white;
+  background: #263D4A;
+}
+
+.portfolio .project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 400px))[2];
+  grid-template-columns: repeat(2, minmax(0, 400px));
+  grid-column-gap: 60px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 60px;
+}
+
+.portfolio .project-imageContainer {
+  position: relative;
+}
+
+.portfolio .project-image {
+  border-radius: 10px;
+}
+
+.portfolio .project-details {
+  position: absolute;
+  top: 60%;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  font-family: .portfolio .project-details basefont;
+  text-align: center;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0 0 9px 9px;
+}
+
+.contact {
+  background-color: #18BC9C;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 500px;
+}
+
+.contact-input {
+  margin: 10px 0 0 0;
+  padding: 10px;
+}
+
+.contact-message {
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  height: 200px;
+  resize: none;
+}
+
+.contact-submit {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #263D4A;
+  height: 6rem;
+}
+
+.social-networks {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: inherit;
+}
+
+.social-networks a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  margin-right: 20px;
+  height: inherit;
+}
+
+/**
+* Componets used for layouts, headers, articles, etc...
+**/

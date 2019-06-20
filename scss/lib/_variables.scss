@@ -1,0 +1,38 @@
+/*------------------------------------*\
+            $VARIABLES
+\*------------------------------------*/
+
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+/**
+ * Brand colors
+ */
+
+   $color-brand:          #263D4A;
+   $color-secondary:      #18BC9C;
+    /**
+    * Grey Scale
+    * This is mainly to hold back designers from adding 200 different greys ;)
+    */
+   $black:                rgb(0,0,0);
+   $darkergrey:             lighten(black, 20%);
+   $darkgrey:               lighten(black, 30%);
+   $grey:                   lighten(black, 45%);
+   $lightgrey:              lighten(black, 75%);
+   $lightergrey:            lighten(black, 90%);
+   $white:                  rgb(255,255,255);
+
+   $color-borders:          $lightgrey;
+
+
+
+
+
+
+
+/*------------------------------------*\
+                $FOTNS
+\*------------------------------------*/
+$basefont: 'Open Sans', sans-serif;
+$baseheadingfont: 'Montserrat', sans-serif;

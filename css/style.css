@@ -1,4 +1,4 @@
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -11,7 +11,7 @@ body {
 
 * {
   box-sizing: border-box; /*This makes sure that the padding and border are included in the total width and height of the elements.*/
-}
+} */
 
 @font-face {
   font-family: 'icomoon';
@@ -43,14 +43,14 @@ body {
   content: "\e900";
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-}
-
-header
+} */
+/* 
+.navbar-top
 {
   background-color: #263D4A;
   margin: 0;
@@ -63,13 +63,13 @@ header
   align-items: center;
   justify-items: center;
   color: white;
-}
+} */
 
-.brand {
+/* .brand {
   font-size: 2em;
-}
+} */
 
-.navbar {
+/* .navbar-top ul {
   height: inherit;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,19 +78,19 @@ header
   padding: 0;
 }
 
-.navbar li {
+.navbar ul li {
   display: flex;
   align-items: center;
 }
 
-.navbar-link {
+.navbar-top a {
   display: inherit;
   align-items: inherit;
   height: 100%;
   color: white;
   text-decoration: none;
   padding: 0 10px;
-}
+} */
 
 .burger-button {
   width: 40px;

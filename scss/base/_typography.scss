@@ -1,0 +1,55 @@
+
+
+
+
+
+/*------------------------------------*\
+            $TYPOGRAPHY
+\*------------------------------------*/
+
+
+// HEADINGS ====================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family : $baseheadingfont;
+  text-transform: uppercase;
+  text-rendering : optimizelegibility;
+}
+
+
+// Set headers line-height, margin bottom and font size
+@each   $header,
+        $margin-bot,
+        $font-size,
+        $line-height
+        in  (h1, 0, 3, 1.5)
+            (h2, 0, 2.4, 1.5)
+            (h3, 0, 2.1, 1.5)
+            (h4, 0, 1.8, 1.5)
+            (h5, 0, 1.6, 1.5)
+            (h6, 0, 1.4, 1.5){
+
+  #{$header}, .#{$header} {
+  	margin-bottom : $margin-bot;
+  	font-size: ($font-size) * 1rem;
+  	line-height : $line-height;
+  }
+}
+// TYPOGRAFÍA ====================================================
+
+p {
+	font-family: $basefont;
+}
+
+
+hr {
+  clear : both;
+  display : block;
+  border-top: 3px solid $white;
+  width: 15rem;
+}
