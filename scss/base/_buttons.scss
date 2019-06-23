@@ -39,4 +39,8 @@
   left: 5px;
   top: 5px;
   color: white;
+  @media #{$screen-medium} {
+    display: block;
+    z-index: 2;
+  }
 }

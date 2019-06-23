@@ -36,12 +36,11 @@ body {
   overflow-x: hidden;
 }
 
-
 section {
   padding: 5em 0;
   text-align: center;
+  color: $white;
 }
-
 
 .navbar-top {
   background-color: $color-brand;
@@ -54,14 +53,50 @@ section {
   align-items: center;
   justify-items: center;
   color: $white;
-  ul {
+  @media #{$screen-medium} {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  &-brand {
+    @media #{$screen-medium} {
+      padding: 20px 0;
+    }
+    @media #{$screen-xsmall} {
+      font-size: 1.8em;
+    }
+  }
+  &-list {
     height: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
+    @media #{$screen-medium} {
+      position: fixed;
+      background: rgba(38, 61, 74, .9);
+      top: 0;
+      left: -100vw;
+      z-index: 1;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+    }
+    &.is-active {
+      @media #{$screen-medium} {
+        left: 0;
+      }
+    }
     li {
       display: flex;
       align-items: center;
+      @media #{$screen-medium} {
+        height: 50px;
+        margin-bottom: .8em;
+      }
     }
   }
   a {
@@ -71,14 +106,15 @@ section {
     color: white;
     text-decoration: none;
     padding: 0 10px;
+    @media #{$screen-medium} {
+      height: 40px;
+      font-size: 2em;
+    }
   }
 }
 
 .hero {
-  display: grid;
-  justify-items: center;
-  color: $white;
-  background-color: $color-secondary;
+  @extend %section-odd;
   &-skills {
     margin: 5px;
     font-size: 30px;
@@ -87,10 +123,25 @@ section {
     color: $white;
     font-weight: bold;
   }
+  &-name {
+    @media #{$screen-small} {
+      font-size: 30px;
+    }
+    @media #{$screen-xsmall} {
+      font-size: 25px;
+    }
+  }
+  &-skills {
+    @media #{$screen-small} {
+      font-size: 18px;
+    }
+    @media #{$screen-xsmall} {
+      font-size: 15px;
+    }
+  }
 }
 
 .portfolio {
-  color: $white;
   background: $color-brand;
   .project {
     display: grid;
@@ -99,8 +150,32 @@ section {
     justify-content: center;
     align-items: center;
     margin: 60px;
+    @media #{$screen-ipad} {
+      margin: 60px 20px;
+    }
+    @media #{$screen-medium} {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10%;
+      font-size: 18px;
+    }
+    @media #{$screen-small} {
+      margin: 0 5%; 
+    }
+    @media #{$screen-xsmall} {
+      margin: 10px 10px;
+    }
+    &-title {
+      @media #{$screen-small} {
+        font-size: 1em;
+      }
+    }
     &-imageContainer {
       position: relative;
+      @media #{$screen-medium} {
+        width: auto;
+        margin-top: 60px;
+      }
     }
     &-image {
       border-radius: 10px;
@@ -117,20 +192,32 @@ section {
       color: black;
       background: rgba(255, 255, 255, .8);
       border-radius: 0 0 9px 9px;
+      @media #{$screen-medium} {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+    &-description {
+      @media #{$screen-small} {
+        font-size: 0.8em;
+      }
     }
   }
 }
 
 .contact {
-  background-color: $color-secondary;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %section-odd;
   &-form {
     display: flex;
     flex-direction: column;
     width: 500px;
+    @media #{$screen-small} {
+      width: 400px;
+    }
+    @media #{$screen-xsmall} {
+      width: 100%;
+    }
   }
   &-input {
     margin: 10px 0 0 0;

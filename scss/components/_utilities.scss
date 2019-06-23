@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    $UTILITIES
+\*------------------------------------*/
+
+/*------------------------------------*\
+    $PLACEHOLDERS
+\*------------------------------------*/
+// Scss placeholder
+
+
+
+%section-odd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-secondary;
+}

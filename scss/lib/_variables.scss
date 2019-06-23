@@ -36,3 +36,13 @@
 \*------------------------------------*/
 $basefont: 'Open Sans', sans-serif;
 $baseheadingfont: 'Montserrat', sans-serif;
+
+
+
+/*------------------------------------*\
+                $MEDIA QUERIES
+\*------------------------------------*/
+$screen-ipad: "screen and (max-width:1023px)";
+$screen-medium: "screen and (max-width: 767px)";
+$screen-small: "screen and (max-width: 480px)";
+$screen-xsmall: "screen and (max-width: 320px)";
