@@ -15,41 +15,41 @@
   <body>
     <i class="fas fa-bars burger-button" id="burger-menu"></i>
     <nav class="navbar-top">
-      <h3 class="navbar-top-brand">Bernardo Ayala</h3>
-      <ul class="navbar-top-list">
+      <h3 class="navbar-top__brand">Bernardo Ayala</h3>
+      <ul class="navbar-top__list">
         <li><a id="portfolio-link" href="#portfolio">Portfolio</a></li>
         <li><a id="contact-link" href="#contact">Contact</a></li>
       </ul>
-    </nav class="navbar-top">
+    </nav>
     <section class="hero">
-        <figure class="profile-pictureContainer">
-          <img class="profile-picture" src="img/profile.png" alt="Profile picture">
+        <figure class="hero__profile-pictureContainer">
+          <img class="hero__profile-picture" src="img/profile.png" alt="Profile picture">
         </figure>
-        <h1 class="hero-name">Bernardo Ayala</h1>
+        <h1 class="hero__name">Bernardo Ayala</h1>
         <hr>
-        <p class="hero-skills">Front-end developer | Blogger</p>
-        <p>Click <a class="resume-link" href="resume.pdf">here</a> to see my resume</p>
+        <p class="hero__skills">Front-end developer | Blogger</p>
+        <p>Click <a class="hero__resume-link" href="resume.pdf">here</a> to see my resume</p>
     </section>
     <section id="portfolio" class="portfolio">
       <h2 class="section-title">Portfolio</h2>
       <hr>
       <article class="project">
-        <figure class="project-imageContainer">
+        <figure class="project__imageContainer">
           <a href="http://bernardoayala.com/">
-            <img class="project-image" src="img/projects/personal-blog.png" alt="">
+            <img class="project__image" src="img/projects/personal-blog.png" alt="">
           </a>
-          <figcaption class="project-details">
-            <h6 class="project-title">Personal blog</h6>
-            <p class="project-description">My personal blog made with Hugo. The content is in Spanish but I can also create content in English.</p>
+          <figcaption class="project__details">
+            <h6 class="project__title">Personal blog</h6>
+            <p class="project__description">My personal blog made with Hugo. The content is in Spanish but I can also create content in English.</p>
           </figcaption>
         </figure>
-        <figure class="project-imageContainer left">
+        <figure class="project__imageContainer">
           <a href="examples/book-store/">
-            <img class="project-image" src="img/projects/book-store.png" alt="">
+            <img class="project__image" src="img/projects/book-store.png" alt="">
           </a>
-          <figcaption class="project-details">
-            <h6 class="project-title">Book Store</h6>
-            <p class="project-description">A simple and responsive book store homepage made with HTML, CSS and JavaScript.</p>
+          <figcaption class="project__details">
+            <h6 class="project__title">Book Store</h6>
+            <p class="project__description">A simple and responsive book store homepage made with HTML, CSS and JavaScript.</p>
           </figcaption>
         </figure>
       </article>
@@ -58,25 +58,23 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <hr>
-        <form class="contact-form" method="post">
-          <input class="contact-input" type="text" name="name" placeholder="Full name">
-          <input class="contact-input" type="text" name="mail" placeholder="E-mail">
-          <input class="contact-input" type="text" name="subject" placeholder="Subject">
-          <textarea class="contact-message" name="message" placeholder="Message"></textarea>
-          <button class="contact-submit btn" type="submit" name="submit">SEND MESSAGE</button>
+        <form class="contact__form" method="post">
+          <input class="contact__input" type="text" name="name" placeholder="Full name">
+          <input class="contact__input" type="text" name="mail" placeholder="E-mail">
+          <input class="contact__input" type="text" name="subject" placeholder="Subject">
+          <textarea class="contact__message" name="message" placeholder="Message"></textarea>
+          <button class="contact__submit btn" type="submit" name="submit">SEND MESSAGE</button>
         </form>
       </div>
     </section>
-    <footer>
-      <ul class="social-networks">
+    <footer class="footer">
+      <ul class="footer__social-networks">
         <li><a href="https://twitter.com/Bernardo_Ayala"><i class="fab fa-twitter"></i></a></li>
         <li><a href="https://www.instagram.com/bernardoayalam/"><i class="fab fa-instagram"></i></a></li>
         <li><a href="https://www.linkedin.com/in/bernardo-ayala/"><i class="fab fa-linkedin"></i></a></li>
         <li><a href="https://github.com/BernardoAyala"><i class="fab fa-github"></i></a></li>
       </ul>
     </footer>
-    <script src="js/menu.js">
-
-    </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

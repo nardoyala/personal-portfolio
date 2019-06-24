@@ -89,7 +89,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #18BC9C;
 }
 
 /**
@@ -277,18 +276,18 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .navbar-top-brand {
+  .navbar-top__brand {
     padding: 20px 0;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .navbar-top-brand {
+  .navbar-top__brand {
     font-size: 1.8em;
   }
 }
 
-.navbar-top-list {
+.navbar-top__list {
   height: inherit;
   display: -ms-grid;
   display: grid;
@@ -298,7 +297,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .navbar-top-list {
+  .navbar-top__list {
     position: fixed;
     background: rgba(38, 61, 74, 0.9);
     top: 0;
@@ -326,12 +325,12 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .navbar-top-list.is-active {
+  .navbar-top__list.is-active {
     left: 0;
   }
 }
 
-.navbar-top-list li {
+.navbar-top__list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +340,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .navbar-top-list li {
+  .navbar-top__list li {
     height: 50px;
     margin-bottom: .8em;
   }
@@ -365,38 +364,42 @@ section {
   }
 }
 
-.hero-skills {
-  margin: 5px;
-  font-size: 30px;
-}
-
-.hero a {
-  color: white;
-  font-weight: bold;
+.hero {
+  background-color: #18BC9C;
 }
 
 @media screen and (max-width: 480px) {
-  .hero-name {
+  .hero__name {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .hero-name {
+  .hero__name {
     font-size: 25px;
   }
 }
 
+.hero__skills {
+  margin: 5px;
+  font-size: 30px;
+}
+
 @media screen and (max-width: 480px) {
-  .hero-skills {
+  .hero__skills {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .hero-skills {
+  .hero__skills {
     font-size: 15px;
   }
+}
+
+.hero__resume-link {
+  color: white;
+  font-weight: bold;
 }
 
 .portfolio {
@@ -451,34 +454,34 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-  .portfolio .project-title {
+  .portfolio .project__title {
     font-size: 1em;
   }
 }
 
-.portfolio .project-imageContainer {
+.portfolio .project__imageContainer {
   position: relative;
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio .project-imageContainer {
+  .portfolio .project__imageContainer {
     width: auto;
     margin-top: 60px;
   }
 }
 
-.portfolio .project-image {
+.portfolio .project__image {
   border-radius: 10px;
 }
 
-.portfolio .project-details {
+.portfolio .project__details {
   position: absolute;
   top: 60%;
   bottom: 0px;
   right: 0;
   left: 0;
   padding: 10px;
-  font-family: .portfolio .project-details basefont;
+  font-family: .portfolio .project__details basefont;
   text-align: center;
   color: black;
   background: rgba(255, 255, 255, 0.8);
@@ -486,7 +489,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio .project-details {
+  .portfolio .project__details {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -500,12 +503,16 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-  .portfolio .project-description {
+  .portfolio .project__description {
     font-size: 0.8em;
   }
 }
 
-.contact-form {
+.contact {
+  background-color: #18BC9C;
+}
+
+.contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,40 +524,40 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-  .contact-form {
+  .contact__form {
     width: 400px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .contact-form {
+  .contact__form {
     width: 100%;
   }
 }
 
-.contact-input {
+.contact__input {
   margin: 10px 0 0 0;
   padding: 10px;
 }
 
-.contact-message {
+.contact__message {
   margin: 10px 0 10px 0;
   padding: 10px;
   height: 200px;
   resize: none;
 }
 
-.contact-submit {
+.contact__submit {
   width: 200px;
   height: 50px;
 }
 
-footer {
+.footer {
   background-color: #263D4A;
   height: 6rem;
 }
 
-.social-networks {
+.footer__social-networks {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -564,7 +571,7 @@ footer {
   height: inherit;
 }
 
-.social-networks a {
+.footer__social-networks a {
   text-decoration: none;
   color: white;
   font-size: 40px;

@@ -58,7 +58,7 @@ section {
     height: auto;
     text-align: center;
   }
-  &-brand {
+  &__brand {
     @media #{$screen-medium} {
       padding: 20px 0;
     }
@@ -66,7 +66,7 @@ section {
       font-size: 1.8em;
     }
   }
-  &-list {
+  &__list {
     height: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,16 +114,9 @@ section {
 }
 
 .hero {
-  @extend %section-odd;
-  &-skills {
-    margin: 5px;
-    font-size: 30px;
-  }
-  a {
-    color: $white;
-    font-weight: bold;
-  }
-  &-name {
+  @extend %section-flex;
+  background-color: $color-secondary;
+  &__name {
     @media #{$screen-small} {
       font-size: 30px;
     }
@@ -131,13 +124,19 @@ section {
       font-size: 25px;
     }
   }
-  &-skills {
+  &__skills {
+    margin: 5px;
+    font-size: 30px;
     @media #{$screen-small} {
       font-size: 18px;
     }
     @media #{$screen-xsmall} {
       font-size: 15px;
     }
+  }
+  &__resume-link {
+    color: $white;
+    font-weight: bold;
   }
 }
 
@@ -165,22 +164,22 @@ section {
     @media #{$screen-xsmall} {
       margin: 10px 10px;
     }
-    &-title {
+    &__title {
       @media #{$screen-small} {
         font-size: 1em;
       }
     }
-    &-imageContainer {
+    &__imageContainer {
       position: relative;
       @media #{$screen-medium} {
         width: auto;
         margin-top: 60px;
       }
     }
-    &-image {
+    &__image {
       border-radius: 10px;
     }
-    &-details {
+    &__details {
       position: absolute;
       top: 60%;
       bottom: 0px;
@@ -198,7 +197,7 @@ section {
         justify-content: space-around;
       }
     }
-    &-description {
+    &__description {
       @media #{$screen-small} {
         font-size: 0.8em;
       }
@@ -207,8 +206,9 @@ section {
 }
 
 .contact {
-  @extend %section-odd;
-  &-form {
+  @extend %section-flex;
+  background-color: $color-secondary;
+  &__form {
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -219,38 +219,37 @@ section {
       width: 100%;
     }
   }
-  &-input {
+  &__input {
     margin: 10px 0 0 0;
     padding: 10px;
   }
-  &-message {
+  &__message {
     margin: 10px 0 10px 0;
     padding: 10px;
     height: 200px;
     resize: none;
   }
-  &-submit {
+  &__submit {
     width: 200px;
     height: 50px;
   }
 }
 
-footer {
+.footer {
   background-color: $color-brand;
   height: 6rem;
-}
-
-.social-networks {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: inherit;
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 40px;
-    margin-right: 20px;
+  &__social-networks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: inherit;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 40px;
+      margin-right: 20px;
+      height: inherit;
+    }
   }
 }

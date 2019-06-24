@@ -1,5 +1,5 @@
 const ipad = window.matchMedia('screen and (max-width: 767px)');
-const menu = document.querySelector('.navbar-top-list');
+const menu = document.querySelector('.navbar-top__list');
 const burgerButton = document.querySelector('#burger-menu');
 const portfolioLink = document.getElementById('portfolio-link');
 const contactlioLink = document.getElementById('contact-link');
