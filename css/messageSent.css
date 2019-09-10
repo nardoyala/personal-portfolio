@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: #263D4A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+span {
+  color: white;
+  font-size: 2em;
+}
