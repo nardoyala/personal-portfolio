@@ -211,9 +211,9 @@ section {
   &-form {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 480px;
     @media #{$screen-small} {
-      width: 400px;
+      width: 320px;
     }
     @media #{$screen-xsmall} {
       width: 100%;
