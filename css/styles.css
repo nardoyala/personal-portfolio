@@ -512,7 +512,7 @@ section {
   background-color: #18BC9C;
 }
 
-.contact__form {
+.contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,30 +524,30 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-  .contact__form {
+  .contact-form {
     width: 400px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .contact__form {
+  .contact-form {
     width: 100%;
   }
 }
 
-.contact__input {
+.contact-form__input {
   margin: 10px 0 0 0;
   padding: 10px;
 }
 
-.contact__message {
+.contact-form__message {
   margin: 10px 0 10px 0;
   padding: 10px;
   height: 200px;
   resize: none;
 }
 
-.contact__submit {
+.contact-form__submit {
   width: 200px;
   height: 50px;
 }
