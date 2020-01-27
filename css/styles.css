@@ -11,9 +11,9 @@
  * Brand colors
  */
 /**
-    * Grey Scale
-    * This is mainly to hold back designers from adding 200 different greys ;)
-    */
+* Grey Scale
+* This is mainly to hold back designers from adding 200 different greys ;)
+*/
 /*------------------------------------*\
                 $FOTNS
 \*------------------------------------*/
@@ -78,16 +78,9 @@ img {
 /*------------------------------------*\
     $PLACEHOLDERS
 \*------------------------------------*/
-.hero, .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.contact, .hero {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -106,24 +99,18 @@ img {
   font-weight: bold;
   height: 44px;
   margin: 0;
-  padding: .6em 2em .8em;
+  padding: 0.6em 2em 0.8em;
   background: #bfbfbf;
   border: none;
   color: black;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
   outline: 0;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
+  transition: 0.2s;
   will-change: transform;
 }
-
 .btn:active {
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 
@@ -140,7 +127,6 @@ img {
   top: 5px;
   color: white;
 }
-
 @media screen and (max-width: 767px) {
   .burger-button {
     display: block;
@@ -218,23 +204,18 @@ hr {
 @-webkit-viewport {
   width: device-width;
 }
-
 @-moz-viewport {
   width: device-width;
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @viewport {
   width: device-width;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -255,18 +236,12 @@ section {
   text-transform: uppercase;
   font-weight: 700;
   height: 6rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template: 1fr / 1fr 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  grid-template: 1fr/1fr 1fr;
   align-items: center;
   justify-items: center;
   color: white;
 }
-
 @media screen and (max-width: 767px) {
   .navbar-top {
     display: block;
@@ -274,28 +249,22 @@ section {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 767px) {
   .navbar-top__brand {
     padding: 20px 0;
   }
 }
-
 @media screen and (max-width: 320px) {
   .navbar-top__brand {
     font-size: 1.8em;
   }
 }
-
 .navbar-top__list {
   height: inherit;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   list-style: none;
 }
-
 @media screen and (max-width: 767px) {
   .navbar-top__list {
     position: fixed;
@@ -305,58 +274,36 @@ section {
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
-
 @media screen and (max-width: 767px) {
   .navbar-top__list.is-active {
     left: 0;
   }
 }
-
 .navbar-top__list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
 @media screen and (max-width: 767px) {
   .navbar-top__list li {
     height: 50px;
-    margin-bottom: .8em;
+    margin-bottom: 0.8em;
   }
 }
-
 .navbar-top a {
   display: inherit;
-  -webkit-box-align: inherit;
-  -ms-flex-align: inherit;
   align-items: inherit;
   height: 100%;
   color: white;
   text-decoration: none;
   padding: 0 10px;
 }
-
 @media screen and (max-width: 767px) {
   .navbar-top a {
     height: 40px;
@@ -367,36 +314,30 @@ section {
 .hero {
   background-color: #18BC9C;
 }
-
 @media screen and (max-width: 480px) {
   .hero__name {
     font-size: 30px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .hero__name {
     font-size: 25px;
   }
 }
-
 .hero__skills {
   margin: 5px;
   font-size: 30px;
 }
-
 @media screen and (max-width: 480px) {
   .hero__skills {
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .hero__skills {
     font-size: 15px;
   }
 }
-
 .hero__resume-link {
   color: white;
   font-weight: bold;
@@ -405,85 +346,62 @@ section {
 .portfolio {
   background: #263D4A;
 }
-
 .portfolio .project {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(0, 500px))[2];
   grid-template-columns: repeat(2, minmax(0, 500px));
   grid-column-gap: 60px;
   grid-row-gap: 30px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 60px;
 }
-
-@media screen and (max-width: 1023px) {
+@media screen and (max-width:1023px) {
   .portfolio .project {
     margin: 60px 20px;
   }
 }
-
 @media screen and (max-width: 767px) {
   .portfolio .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 10%;
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .portfolio .project {
     margin: 0 5%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .portfolio .project {
     margin: 10px 10px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .portfolio .project__title {
     font-size: 1em;
   }
 }
-
 .portfolio .project__link {
   color: black;
   text-decoration: none;
 }
-
 .portfolio .project__link:hover {
   color: #18BC9C;
 }
-
 .portfolio .project__imageContainer {
   position: relative;
 }
-
 @media screen and (max-width: 767px) {
   .portfolio .project__imageContainer {
     width: auto;
     margin-top: 60px;
   }
 }
-
 .portfolio .project__image {
   border-radius: 10px;
 }
-
 .portfolio .project__details {
   position: absolute;
   top: 60%;
@@ -491,27 +409,19 @@ section {
   right: 0;
   left: 0;
   padding: 10px;
-  font-family: .portfolio .project__details basefont;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   color: black;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 9px 9px;
 }
-
 @media screen and (max-width: 767px) {
   .portfolio .project__details {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 }
-
 @media screen and (max-width: 480px) {
   .portfolio .project__description {
     font-size: 0.8em;
@@ -521,42 +431,36 @@ section {
 .contact {
   background-color: #18BC9C;
 }
-
 .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 480px;
 }
-
 @media screen and (max-width: 480px) {
   .contact-form {
     width: 320px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .contact-form {
     width: 100%;
   }
 }
-
 .contact-form__input {
   margin: 10px 0 0 0;
   padding: 10px;
 }
-
+.contact-form__label--warning {
+  text-align: left;
+  font-weight: bold;
+  color: red;
+}
 .contact-form__message {
   margin: 10px 0 10px 0;
   padding: 10px;
   height: 200px;
   resize: none;
 }
-
 .contact-form__submit {
   width: 200px;
   height: 50px;
@@ -566,21 +470,13 @@ section {
   background-color: #263D4A;
   height: 6rem;
 }
-
 .footer__social-networks {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: inherit;
 }
-
 .footer__social-networks a {
   text-decoration: none;
   color: white;
