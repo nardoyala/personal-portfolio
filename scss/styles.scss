@@ -6,7 +6,6 @@
 // @import "lib/functions";
 // @import "lib/debug";
 
-
 /**
 * Base
 **/
@@ -14,13 +13,10 @@
 @import "lib/reset";
 // @import "lib/debug";
 
-
-
 /**
 * Components
 **/
 @import "components/utilities";
-
 
 /**
 * HTML elements
@@ -28,24 +24,17 @@
 // @import "base/figures";
 // @import "base/forms";
 @import "base/buttons";
+@import "base/tags";
 // @import "base/images";
 // @import "base/links";
 @import "base/typography";
 // @import "base/tables";
-
-
-
-
 
 /**
 * Layout and general styles
 **/
 @import "layout/site";
 // @import "layout/textures";
-
-
-
-
 
 /**
 * Componets used for layouts, headers, articles, etc...

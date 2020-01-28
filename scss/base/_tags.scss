@@ -1,0 +1,11 @@
+.tags {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  li {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+  }
+}
